@@ -599,11 +599,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -648,29 +643,12 @@ video {
   width: 100%;
 }
 
-.min-w-9 {
-  min-width: 2.25rem;
-}
-
-.min-w-96 {
-  min-width: 24rem;
-}
-
-.min-w-max {
-  min-width: -moz-max-content;
-  min-width: max-content;
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-screen-xl {
   max-width: 1280px;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .-translate-y-full {
@@ -707,14 +685,6 @@ video {
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
@@ -745,10 +715,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.text-clip {
-  text-overflow: clip;
 }
 
 .rounded-2xl {
@@ -797,11 +763,6 @@ video {
   background-color: rgb(255 255 138 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-tourism-header {
   background-image: url('../images/turismo-header.jpg');
 }
@@ -816,11 +777,6 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {
@@ -875,11 +831,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -948,16 +899,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-yellow-soft {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 138 / var(--tw-text-opacity));
-}
-
-.text-yellow-lime {
-  --tw-text-opacity: 1;
-  color: rgb(236 233 63 / var(--tw-text-opacity));
 }
 
 .brightness-50 {
@@ -1053,10 +994,6 @@ video {
     margin-bottom: 2.5rem;
   }
 
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .md\:mt-14 {
     margin-top: 3.5rem;
   }
@@ -1083,22 +1020,18 @@ video {
     line-height: 1;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
+  .md\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
+  .md\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
