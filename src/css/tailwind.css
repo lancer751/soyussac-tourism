@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    h2{
+        @apply text-3xl sm:text-4xl md:text-5xl font-bold font-madimiOne;
+    }
+}
+
+@layer components{
+    .navbar-mobile{
+        @apply absolute inset-0 bg-yellow-lime h-full p-10 text-center flex items-center justify-center  transition-transform duration-[400ms] md:hidden z-[100];
+    }
+
+    .card-vuelos{
+        @apply font-madimiOne rounded-xl w-full relative overflow-hidden max-w-md h-[500px];
+    }
+
+    .button-visibility{
+        @apply py-4 px-6 text-white text-lg font-madimiOne inline-block rounded-xl transition-colors;
+    }
+
+    .input-form{
+        @apply bg-slate-300 border-none rounded-lg px-4 py-2 outline-none;
+    }
+
+    .input-container{
+        @apply flex flex-col lg:flex-row justify-between gap-3;
+    }
+}

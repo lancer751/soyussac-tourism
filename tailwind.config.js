@@ -17,6 +17,8 @@ module.exports = {
       },
       backgroundImage:{
         'tourism-header': "url('../images/turismo-header.jpg')",
+        'constellation': "url('../images/illustration-constellation.svg')",
+        'register-contact': "url('../images/contacto.jpg')",
       }
     },
   },
