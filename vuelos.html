@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOYUS SAC</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body class="min-h-screen">
+    <header class="w-full">
+        <!-- navbar section -->
+        <section class="bg-dark-blue-grashish">
+            <nav class="w-[90%] max-w-screen-xl mx-auto text-white py-5 md:py-4 flex items-center justify-between">
+                <h1 class="font-bold uppercase md:text-xl">SOYUS SAC</h1>
+
+                <img src="./src/images/menu.svg" alt="menu-icon" class="cursor-pointer md:hidden" id="menu-open">
+
+                <!-- menu lateral mobile-->
+                <div class="navbar-mobile -translate-y-full" id="menu-lateral">
+                    <img src="./src/images/close-menu.svg" alt="" class="w-10 absolute top-4 right-4 cursor-pointer" id="menu-close">
+
+                    <ul class="text-dark-blue text-xl space-y-10 font-medium">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="vuelos.html">Vuelos</a>
+                        </li>
+                        <li>    
+                            <a href="login.html" class="bg-green-lime flex gap-2 text-white px-8 py-3 rounded-xl hover:bg-lime-600 transition-colors">
+                                <img src="./src/images/user-nosesion.svg" alt="">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#register.html" class="bg-dark-blue flex gap-2 text-white px-8 py-3 rounded-xl hover:bg-dark-blue-grashish transition-colors">
+                                Registrarse
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- menu desktop -->
+                <div class="hidden md:block">
+                    <ul class="flex items-center space-x-5 lg:space-x-10">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="vuelos.html">Vuelos</a>
+                        </li>
+                        <li>    
+                            <a href="login.html" class="bg-green-lime flex gap-2 text-white px-8 py-3 rounded-xl hover:bg-lime-600 transition-colors">
+                                <img src="./src/images/user-nosesion.svg" alt="">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="register.html" class="bg-dark-blue flex gap-2 text-white px-8 py-3 rounded-xl hover:bg-white hover:text-dark-blue transition-colors">
+                                Registrarse
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="w-4/5 md:w-[90%] mx-auto grid items-center justify-items-center auto-cols-fr gap-6  py-10">
+            <article class="vuelos-details">
+
+                <div class="relative">
+                    <img src="./src/images/venecia.jpg" class="w-full h-full object-cover object-center pointer-events-none" alt="venecia vuelo">
+                    <p class="absolute text-white text-lg top-0 m-2 ${statusColor} py-2 px-4 font-semibold rounded-2xl sm:text-sm sm:px-6 sm:py-1 bg-green-lime">Disponible</p>
+                </div>
+
+                <div class="p-5  pb-7">
+                    <p class="text-sm text-dark-blue-grashish font-notoJP">Ciudad de Venecia, <span>Italia</span>
+                    </p>
+
+                    <div class="space-y-4 mt-3 font-madimiOne">
+                        <h3 class="text-lg font-bold text-dark-blue uppercase">Viaje al ciudad Venecia en Italia</h3>
+
+                        <p class="font-ligth font-notoJP text-dark-blue-grashish text-sm leading-7">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus rem iste nesciunt sed ea voluptates. Commodi sint fugiat vel sit repellat non ipsum ex in doloremque alias, nostrum cumque repudiandae.
+                        </p>
+
+                        <p class="font-semibold text-green-lime">Fecha de salida: <span class="text-dark-blue-grashish font-medium font-notoJP">01/03/28</span></p>
+                        <p class="font-semibold text-green-lime">Fecha de retorno: <span class="text-dark-blue-grashish font-medium font-notoJP">05/03/28</span></p>
+                        <p class="font-semibold text-green-lime">Precio Unitario: <span class="text-dark-blue-grashish font-medium font-notoJP">S/1200</span></p>
+                        
+                        <a href="#" class="button-visibility bg-yellow-lime text-center text-dark-blue block hover:bg-yellow-300 transition-colors">Reservar Asiento</a>
+                    
+                    </div>
+                </div>
+            </article>
+
+            
+        </section>
+    </main>
+
+    <footer class="w-full bg-dark-blue py-5">
+        <p class="text-white font-madimiOne text-center">© 2024 LauWongC - Todos los derechos reservados</p>
+    </footer>
+    <script src="./src/js/menu-lateral.js"></script>
+</body>
+</html>

@@ -14,7 +14,7 @@
     }
 
     .card-vuelos{
-        @apply font-madimiOne rounded-xl w-full relative overflow-hidden max-w-md h-[500px];
+        @apply font-madimiOne rounded-xl w-full relative overflow-hidden max-w-sm h-full;
     }
 
     .button-visibility{
@@ -28,4 +28,9 @@
     .input-container{
         @apply flex flex-col lg:flex-row justify-between gap-3;
     }
+
+    .vuelos-details{
+        @apply grid grid-rows-[300px,max-content] md:grid-rows-[max-content] md:grid-cols-[1.25fr,1.5fr]  overflow-hidden max-w-[670px] max-h-max h-full w-full rounded-lg shadow-xl bg-white;
+    }
+
 }
